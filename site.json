@@ -1,0 +1,210 @@
+{
+  "siteId": "atmchat",
+  "roomNumber": 20,
+  "redditSr": "atmchat",
+  "name": "atmchat",
+  "tagline": "Find a nearby ATM. Public map data · Maps outbound.",
+  "composePlaceholder": "Fee tip, outage, or safer corner near you?",
+  "emptyState": "Share location (opt-in) or city/zip to find public ATM pins. Unofficial finder — not a bank. Sign in to post tips. Guest can browse. Preview.",
+  "preview": true,
+  "noindex": true,
+  "domain": "atmchat.com",
+  "earlyWelcome": false,
+  "dms": false,
+  "robots": "noindex, nofollow",
+  "honesty": "Unofficial ATM finder · not a bank · public OSM data · Maps outbound only · preview",
+  "trustBlurb": "Unofficial ATM finder using public map data. Not affiliated with any bank. Guest can browse. Preview.",
+  "exploreExplainer": "Location gate → nearest public ATM pins → open in Google Maps or Apple Maps. We save links, not proprietary bank dumps.",
+  "locationGate": {
+    "enabled": true,
+    "prompt": "Where are you? We'll find nearby ATMs from public map data.",
+    "fields": [
+      "city",
+      "zip"
+    ],
+    "geolocationOptIn": true
+  },
+  "stories": {
+    "enabled": true,
+    "maxSeconds": 15,
+    "maxBytes": 8000000
+  },
+  "theme": {
+    "bg": "#f2f7f4",
+    "surface": "#ffffff",
+    "nav-bg": "#0d2e22",
+    "nav-text": "#8fbfa8",
+    "nav-hover": "#e6f2ec",
+    "nav-active": "#f2f7f4",
+    "text": "#123028",
+    "text-muted": "#4a6b5c",
+    "text-light": "#6a8a7a",
+    "accent": "#2e7d4f",
+    "accent-dark": "#1b5e38",
+    "teal": "#1a8a6a",
+    "silver": "#b8d0c4",
+    "border": "#cfe0d6",
+    "avatarColors": [
+      "#0d2e22",
+      "#2e7d4f",
+      "#1a8a6a",
+      "#1b5e38",
+      "#3d6b54",
+      "#c9a227"
+    ]
+  },
+  "nests": [
+    {
+      "slug": "us",
+      "label": "United States",
+      "parent": null,
+      "kind": "region",
+      "blurb": "US ATM chatter + public OSM amenity=atm coverage.",
+      "nav": true
+    },
+    {
+      "slug": "europe",
+      "label": "Europe",
+      "parent": null,
+      "kind": "region",
+      "blurb": "Europe region chip — Overpass ATM pins; fee tips welcome.",
+      "nav": true
+    },
+    {
+      "slug": "asia",
+      "label": "Asia",
+      "parent": null,
+      "kind": "region",
+      "blurb": "Asia region chip — public map pins; Maps outbound only.",
+      "nav": true
+    }
+  ],
+  "directory": {
+    "note": "Primary lean source: OpenStreetMap amenity=atm via Overpass (US / Europe / Asia). Outbound only: Google Maps / Apple Maps deep links; optional bank locator URLs in FACT metadata later. Never download/cache proprietary bank ATM dumps. SAVE LINKS NOT CONTENT.",
+    "sources": {
+      "overpass": {
+        "amenity": "atm",
+        "label": "OpenStreetMap ATMs",
+        "policy": "public · query live · do not mirror dumps"
+      },
+      "mapsOutbound": [
+        "google-maps",
+        "apple-maps"
+      ]
+    }
+  },
+  "taxonomy": {
+    "version": 1,
+    "name": "ATM tips",
+    "symbolPrefix": "$",
+    "topics": [
+      {
+        "id": "fees",
+        "label": "Fees",
+        "kind": "tip",
+        "blurb": "Surcharge notes",
+        "followDefault": true,
+        "adminSeed": true,
+        "status": "active"
+      },
+      {
+        "id": "outage",
+        "label": "Outage",
+        "kind": "tip",
+        "blurb": "Down / empty",
+        "followDefault": true,
+        "adminSeed": true,
+        "status": "active"
+      },
+      {
+        "id": "access",
+        "label": "Access",
+        "kind": "tip",
+        "blurb": "Hours / vestibule",
+        "followDefault": true,
+        "adminSeed": true,
+        "status": "active"
+      },
+      {
+        "id": "safety",
+        "label": "Safety",
+        "kind": "tip",
+        "blurb": "Well-lit corners",
+        "followDefault": false,
+        "adminSeed": true,
+        "status": "active"
+      }
+    ],
+    "defaultWatchlist": [
+      "fees",
+      "outage",
+      "access"
+    ],
+    "notes": "Neighbor tips only. Not a bank product."
+  },
+  "trends": [],
+  "outbound": [],
+  "sessionSeeds": [],
+  "rail": {
+    "kind": "outbound",
+    "title": "Room Brief",
+    "kicker": "Preview",
+    "maxCards": 3,
+    "meta": "Unofficial · not a bank · preview · noindex",
+    "footer": "Public map data + Maps outbound. We do not host bank ATM databases. SAVE LINKS NOT CONTENT.",
+    "fact": {
+      "tag": "FACT",
+      "headline": "Unofficial ATM finder — not a bank.",
+      "body": "atmchat helps you locate nearby ATMs from public OpenStreetMap amenity=atm data and opens them in Google Maps or Apple Maps. It is not a bank, does not dispense cash, and does not store proprietary bank ATM dumps. Verify fees and hours at the machine or with your bank."
+    },
+    "outbound": [
+      {
+        "tag": "Data",
+        "headline": "OpenStreetMap — amenity=atm",
+        "url": "https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm",
+        "snippet": "OSM wiki for the ATM tag. Coverage varies; contribute fixes on OSM, not by pasting bank dumps here.",
+        "meta": "Public data · verified 2026-09-26"
+      },
+      {
+        "tag": "Maps",
+        "headline": "Open in Maps (pattern)",
+        "url": "https://www.openstreetmap.org/",
+        "snippet": "Factory opens pins via Maps deep links. Outbound only — we do not rehost imagery or proprietary locator DBs.",
+        "meta": "Outbound · preview"
+      },
+      {
+        "tag": "Tips",
+        "headline": "Fee + lighting beat a long walk",
+        "url": "https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm",
+        "snippet": "Neighbor tips: surcharge, vestibule hours, and whether the machine looked empty. Never post full card numbers or PINs.",
+        "meta": "Best practice · preview"
+      }
+    ],
+    "porch": {
+      "prompt": "What do you need first?",
+      "options": [
+        "Share location",
+        "Pick a region",
+        "Post a fee tip"
+      ],
+      "dwellMs": 9000
+    },
+    "overlay": {
+      "enabled": true,
+      "ms": 7000,
+      "headline": "Unofficial ATM finder — not a bank.",
+      "links": [
+        {
+          "label": "OSM amenity=atm",
+          "url": "https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm"
+        },
+        {
+          "label": "OpenStreetMap",
+          "url": "https://www.openstreetmap.org/"
+        }
+      ]
+    }
+  },
+  "v": 1,
+  "cacheBust": 1
+}
