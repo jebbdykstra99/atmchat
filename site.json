@@ -59,7 +59,7 @@
       "label": "United States",
       "parent": null,
       "kind": "region",
-      "blurb": "US ATM chatter + public OSM amenity=atm coverage.",
+      "blurb": "US fee / network talk — cite banks, no invented rates.",
       "nav": true
     },
     {
@@ -67,7 +67,7 @@
       "label": "Europe",
       "parent": null,
       "kind": "region",
-      "blurb": "Europe region chip — Overpass ATM pins; fee tips welcome.",
+      "blurb": "EU/UK cash access — links not maps scrape.",
       "nav": true
     },
     {
@@ -75,7 +75,63 @@
       "label": "Asia",
       "parent": null,
       "kind": "region",
-      "blurb": "Asia region chip — public map pins; Maps outbound only.",
+      "blurb": "APAC cash networks.",
+      "nav": true
+    },
+    {
+      "slug": "fee-free",
+      "label": "Fee-free finds",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Share fee-free spots with source; no affiliate spam.",
+      "nav": true
+    },
+    {
+      "slug": "travel-cash",
+      "label": "Travel cash",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Airport / border cash tips with FACT.",
+      "nav": true
+    },
+    {
+      "slug": "network-wars",
+      "label": "Network wars",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Plus / Cirrus / Allpoint / MoneyPass talk.",
+      "nav": true
+    },
+    {
+      "slug": "outages",
+      "label": "Outages",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Machine down / network blip reports — timestamped.",
+      "nav": true
+    },
+    {
+      "slug": "ask-atm",
+      "label": "Ask ATM",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Questions — guest browse, members post.",
+      "nav": true
+    },
+    {
+      "slug": "surcharge",
+      "label": "Surcharge math",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Break even on fees — show the arithmetic.",
+      "nav": true
+    },
+    {
+      "slug": "rural",
+      "label": "Rural / thin coverage",
+      "parent": null,
+      "kind": "theme",
+      "blurb": "Thin ATM deserts — Iowa and beyond.",
       "nav": true
     }
   ],
