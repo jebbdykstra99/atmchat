@@ -10,7 +10,7 @@
   "noindex": true,
   "domain": "atmchat.com",
   "earlyWelcome": false,
-  "dms": false,
+  "dms": true,
   "robots": "noindex, nofollow",
   "honesty": "Unofficial ATM finder · not a bank · public OSM data · Maps outbound only · preview",
   "trustBlurb": "Unofficial ATM finder using public map data. Not affiliated with any bank. Guest can browse. Preview.",
