@@ -1,7 +1,6 @@
 {
   "siteId": "atmchat",
   "roomNumber": 20,
-  "redditSr": "atmchat",
   "name": "atmchat",
   "tagline": "Find a nearby ATM. Public map data · Maps outbound.",
   "composePlaceholder": "Fee tip, outage, or safer corner near you?",
@@ -262,5 +261,6 @@
     }
   },
   "v": 1,
-  "cacheBust": 1
+  "cacheBust": 1,
+  "redditCrosspost": false
 }
