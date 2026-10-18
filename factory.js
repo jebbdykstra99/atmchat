@@ -315,8 +315,8 @@
       openAuth('join');
       return false;
     }
-    if (siteKilled) {
-      gateErr('This room is paused.');
+    if (postingPaused() && action !== 'report' && action !== 'block') {
+      gateErr(pausedNotice());
       return false;
     }
     if (!isEmailVerified()) {
@@ -327,21 +327,45 @@
     }
     return true;
   }
+  function postingPaused() {
+    return siteKilled || !!(site && site.postingPaused === true);
+  }
+  function pausedNotice() {
+    return (site && typeof site.pausedNotice === 'string' && site.pausedNotice) || 'Posting is paused for a few days.';
+  }
+  function syncPausedChrome() {
+    var on = postingPaused();
+    document.documentElement.classList.toggle('posting-paused', on);
+    if (on && !document.getElementById('posting-paused-css')) {
+      var st = document.createElement('style');
+      st.id = 'posting-paused-css';
+      st.textContent = '.posting-paused #thoughts-compose-wrap,.posting-paused #compose-image-input,.posting-paused #compose-gif-input,' +
+        '.posting-paused [data-story-add],.posting-paused .stories-composer-overlay,.posting-paused .chat-compose,.posting-paused .sidebar-post-wrap{display:none !important}' +
+        '.preview-banner .paused-line{margin-top:0.2rem}';
+      document.head.appendChild(st);
+    }
+    if (on) {
+      var ov = document.getElementById('stories-composer');
+      if (ov) ov.hidden = true;
+    }
+  }
   function syncKillBanner() {
+    syncPausedChrome();
     var el = document.getElementById('kill-banner');
     if (!el) {
       el = document.createElement('div');
       el.id = 'kill-banner';
-      el.className = 'preview-banner';
+      el.className = 'paused-line';
       el.setAttribute('role', 'status');
       el.hidden = true;
       var prev = document.querySelector('.preview-banner');
-      if (prev && prev.parentNode) prev.parentNode.insertBefore(el, prev.nextSibling);
+      // Notice is a line INSIDE the preview banner, so it never covers the preview / noindex text.
+      if (prev) prev.appendChild(el);
       else document.body.insertBefore(el, document.body.firstChild);
     }
-    if (siteKilled) {
+    if (postingPaused()) {
       el.hidden = false;
-      el.textContent = 'This room is paused.';
+      el.textContent = pausedNotice();
     } else {
       el.hidden = true;
     }
@@ -1121,7 +1145,7 @@
     var slugErr = nestSlugError(slug);
     if (slugErr) { show(slugErr); return; }
     if (!requireVerified('add a room')) {
-      if (siteKilled) show('This room is paused.');
+      if (postingPaused()) show(pausedNotice());
       else show('Verify your email before you add a room.');
       return;
     }
@@ -4899,6 +4923,7 @@
     return ov;
   }
   function openStoriesComposer(force) {
+    if (postingPaused()) return;
     if (!storiesOn()) return;
     if (!force && !requireVerified('add a story')) return;
     if (!force && storiesPostedToday() >= STORIES_PER_DAY) {
@@ -4945,7 +4970,7 @@
   function submitStory() {
     if (!requireVerified('add a story')) return;
     if (!fbDb) { storiesErr('Stories are not connected.'); return; }
-    if (siteKilled) { storiesErr('This room is paused.'); return; }
+    if (postingPaused()) { storiesErr(pausedNotice()); return; }
     if (storiesPostedToday() >= STORIES_PER_DAY) {
       storiesErr('Easy — a few stories a day is enough.');
       return;
@@ -5351,6 +5376,7 @@
     mergeNests();
     applyTheme(site.theme);
     applySiteChrome();
+    syncKillBanner();
     ensureJoinAuthLayout();
     ensureDmCss();
     hideDummyChrome();
