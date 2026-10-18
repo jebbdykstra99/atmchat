@@ -262,5 +262,7 @@
     }
   },
   "v": 1,
-  "cacheBust": 1
+  "cacheBust": 1,
+  "postingPaused": true,
+  "pausedNotice": "Posting is paused for a few days."
 }
