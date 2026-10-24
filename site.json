@@ -4,7 +4,7 @@
   "name": "atmchat",
   "tagline": "Find a nearby ATM. Public map data · Maps outbound.",
   "composePlaceholder": "Fee tip, outage, or safer corner near you?",
-  "emptyState": "Share location (opt-in) or city/zip to find public ATM pins. Unofficial finder — not a bank. Sign in to post tips. Guest can browse. Preview.",
+  "emptyState": "Share location (opt-in) or city/zip to find public ATM pins. Unofficial finder, not a bank. Sign in to post tips. Guest can browse. Preview.",
   "preview": true,
   "noindex": true,
   "domain": "atmchat.com",
@@ -58,7 +58,7 @@
       "label": "United States",
       "parent": null,
       "kind": "region",
-      "blurb": "US fee / network talk — cite banks, no invented rates.",
+      "blurb": "US fee / network talk: cite banks, no invented rates.",
       "nav": true
     },
     {
@@ -66,7 +66,7 @@
       "label": "Europe",
       "parent": null,
       "kind": "region",
-      "blurb": "EU/UK cash access — links not maps scrape.",
+      "blurb": "EU/UK cash access: links not maps scrape.",
       "nav": true
     },
     {
@@ -106,7 +106,7 @@
       "label": "Outages",
       "parent": null,
       "kind": "theme",
-      "blurb": "Machine down / network blip reports — timestamped.",
+      "blurb": "Machine down / network blip reports, timestamped.",
       "nav": true
     },
     {
@@ -114,7 +114,7 @@
       "label": "Ask ATM",
       "parent": null,
       "kind": "theme",
-      "blurb": "Questions — guest browse, members post.",
+      "blurb": "Questions: guest browse, members post.",
       "nav": true
     },
     {
@@ -122,7 +122,7 @@
       "label": "Surcharge math",
       "parent": null,
       "kind": "theme",
-      "blurb": "Break even on fees — show the arithmetic.",
+      "blurb": "Break even on fees: show the arithmetic.",
       "nav": true
     },
     {
@@ -130,7 +130,7 @@
       "label": "Rural / thin coverage",
       "parent": null,
       "kind": "theme",
-      "blurb": "Thin ATM deserts — Iowa and beyond.",
+      "blurb": "Thin ATM deserts: Iowa and beyond.",
       "nav": true
     }
   ],
@@ -209,13 +209,13 @@
     "footer": "Public map data + Maps outbound. We do not host bank ATM databases. SAVE LINKS NOT CONTENT.",
     "fact": {
       "tag": "FACT",
-      "headline": "Unofficial ATM finder — not a bank.",
+      "headline": "Unofficial ATM finder, not a bank.",
       "body": "atmchat helps you locate nearby ATMs from public OpenStreetMap amenity=atm data and opens them in Google Maps or Apple Maps. It is not a bank, does not dispense cash, and does not store proprietary bank ATM dumps. Verify fees and hours at the machine or with your bank."
     },
     "outbound": [
       {
         "tag": "Data",
-        "headline": "OpenStreetMap — amenity=atm",
+        "headline": "OpenStreetMap: amenity=atm",
         "url": "https://wiki.openstreetmap.org/wiki/Tag:amenity%3Datm",
         "snippet": "OSM wiki for the ATM tag. Coverage varies; contribute fixes on OSM, not by pasting bank dumps here.",
         "meta": "Public data · verified 2026-09-26"
@@ -224,7 +224,7 @@
         "tag": "Maps",
         "headline": "Open in Maps (pattern)",
         "url": "https://www.openstreetmap.org/",
-        "snippet": "Factory opens pins via Maps deep links. Outbound only — we do not rehost imagery or proprietary locator DBs.",
+        "snippet": "Factory opens pins via Maps deep links. Outbound only: we do not rehost imagery or proprietary locator DBs.",
         "meta": "Outbound · preview"
       },
       {
@@ -247,7 +247,7 @@
     "overlay": {
       "enabled": true,
       "ms": 7000,
-      "headline": "Unofficial ATM finder — not a bank.",
+      "headline": "Unofficial ATM finder, not a bank.",
       "links": [
         {
           "label": "OSM amenity=atm",
