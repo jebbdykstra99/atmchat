@@ -1,6 +1,6 @@
 # atmchat
 
-SubX room #20 — Find a nearby ATM. Public map data · Maps outbound. (preview).
+SubX room #20: Find a nearby ATM. Public map data · Maps outbound. (preview).
 
 Static site. `siteId` is `atmchat`. Custom domain in `CNAME` is `atmchat.com`. Preview banner and `noindex` stay on.
 

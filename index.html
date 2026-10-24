@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
     <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>atmchat — Find a nearby ATM. Public map data · Maps outbound.</title>
+  <title>atmchat: Find a nearby ATM. Public map data · Maps outbound.</title>
   <meta name="description" content="Unofficial ATM finder from public OpenStreetMap data. Not a bank. Maps outbound. Preview.">
   <link rel="canonical" href="https://atmchat.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://atmchat.com/">
-  <meta property="og:title" content="atmchat — Find a nearby ATM. Public map data · Maps outbound.">
+  <meta property="og:title" content="atmchat: Find a nearby ATM. Public map data · Maps outbound.">
   <meta property="og:description" content="Find nearby ATMs from public map data. Not a bank. Preview.">
   <meta property="og:image" content="https://atmchat.com/og.png">
   <meta name="twitter:image" content="https://atmchat.com/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="atmchat — Find a nearby ATM. Public map data · Maps outbound.">
+  <meta name="twitter:title" content="atmchat: Find a nearby ATM. Public map data · Maps outbound.">
   <meta name="twitter:description" content="Find nearby ATMs from public map data. Not a bank. Preview.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -132,7 +132,7 @@
     <section class="city-gate" id="city-gate" aria-labelledby="city-gate-title">
       <div class="city-gate-kicker">Non-emergency</div>
       <h2 class="city-gate-title" id="city-gate-title">Where are you?</h2>
-      <p class="city-gate-prompt" id="city-gate-prompt">Where are you? We'll find nearby ATMs from public map data.</p>
+      <p class="city-gate-prompt" id="city-gate-prompt">Where are you? SubX will find nearby ATMs from public map data.</p>
       <form class="city-gate-form" id="city-gate-form">
         <label class="city-field"><span>City</span>
           <input id="city-input" name="city" autocomplete="address-level2" placeholder="Boston">
@@ -145,9 +145,9 @@
           <button class="ghost-btn" id="geo-opt-in" type="button">Use my location</button>
         </div>
       </form>
-      <p class="city-gate-note" id="city-gate-note">Location is optional. The button asks the browser. We do not guess from your network.</p>
+      <p class="city-gate-note" id="city-gate-note">Location is optional. The button asks the browser. SubX does not guess from your network.</p>
       <div class="nest-picks" id="nest-picks"></div>
-      <p class="issue-label" id="issue-label" hidden>What is it? We do not file this. Your city does.</p>
+      <p class="issue-label" id="issue-label" hidden>What is it? SubX does not file this. Your city does.</p>
       <div class="issue-picks" id="issue-picks" hidden></div>
       <div class="handoff" id="handoff" hidden></div>
     </section>
@@ -243,15 +243,15 @@
     <div class="profile-id">
       <div class="profile-display-name" id="profile-display-name">Guest</div>
       <div class="profile-handle" id="profile-handle">@guestatmchat</div>
-      <p class="profile-bio" id="profile-bio">Unofficial helper — not a substitute for 911.</p>
+      <p class="profile-bio" id="profile-bio">Unofficial helper, not a substitute for 911.</p>
       <div class="profile-meta" id="profile-meta">atmchat · preview room</div>
       <div class="profile-counts">
-        <button type="button" class="count-btn" disabled><strong>—</strong> Following <span class="tab-soon">Soon</span></button>
-        <button type="button" class="count-btn" disabled><strong>—</strong> Followers <span class="tab-soon">Soon</span></button>
+        <button type="button" class="count-btn" disabled><strong>-</strong> Following <span class="tab-soon">Soon</span></button>
+        <button type="button" class="count-btn" disabled><strong>-</strong> Followers <span class="tab-soon">Soon</span></button>
       </div>
     </div>
     <div class="profile-posts" id="profile-pane-posts">
-      <div class="empty-note" id="profile-posts-empty">Share location (opt-in) or city/zip to find public ATM pins. Unofficial finder — not a bank. Sign in to post tips. Guest can browse. Preview.</div>
+      <div class="empty-note" id="profile-posts-empty">Share location (opt-in) or city/zip to find public ATM pins. Unofficial finder, not a bank. Sign in to post tips. Guest can browse. Preview.</div>
     </div>
   </div>
 </div>
@@ -272,7 +272,7 @@
   </div>
   <div class="chat-active-pane" id="chat-active-pane">
     <div class="chat-placeholder" id="chat-placeholder">
-      <div class="chat-placeholder-title">Chat — Soon</div>
+      <div class="chat-placeholder-title">Chat: Soon</div>
       <div class="chat-placeholder-sub">Direct messages are not live in this preview. No DMs graph. Sample thread copy in site.json is not a real inbox.</div>
       <button class="accent-btn" id="chat-placeholder-new" type="button" disabled>Soon</button>
     </div>
