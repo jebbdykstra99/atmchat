@@ -3112,7 +3112,7 @@
 
   function nwsHeaders(accept) {
     var cfg = railCfg();
-    var ua = cfg.userAgent || ((site && site.name) || SITE_ID || 'subx') + '/rail (jebb@subx.it)';
+    var ua = cfg.userAgent || ((site && site.name) || SITE_ID || 'subx') + '/rail (takedown@subx.it)';
     return {
       'Accept': accept || 'application/geo+json',
       'User-Agent': ua
