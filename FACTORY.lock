@@ -4,13 +4,13 @@
   "room": "atmchat",
   "siteId": "atmchat",
   "files": {
-    "factory.js": "c7212a6365aa31f4a38564c7ddde3963097655f380383f204d26987b65cdea5a",
+    "factory.js": "fd63088590656ab5e03b0a7d565f96e06fe0f5be1c4d6b852d4400516b6d61e2",
     "styles.css": "b133b279dd67fde74a3d4bd407500575b3ecda4f4a9e7220316e224d5d69c054"
   },
   "keepFiles": [
     "gate.js"
   ],
   "exceptions": "see subx-factory EXCEPTIONS.md",
-  "stampedAt": "2026-10-30T13:30:00Z",
+  "stampedAt": "2026-11-11T16:42:36Z",
   "masterRef": "subx-factory factory/v1.0.0 @ aaf157f"
 }
