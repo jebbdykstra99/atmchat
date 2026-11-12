@@ -4,7 +4,7 @@
   "room": "atmchat",
   "siteId": "atmchat",
   "files": {
-    "factory.js": "5df48b84f4e22627ba5b298fdf050dc16fcfb984e2ec515c66ec13801cc3b471",
+    "factory.js": "dfa89b50ffee1a8939439524b4826b8a3400e0dbda12f3ee3ddc662466530c32",
     "factory-signin.js": "0427ac92a3f672801964fdcf32002d301e2f85d6965f9de733b57bc4080bdb72",
     "styles.css": "b133b279dd67fde74a3d4bd407500575b3ecda4f4a9e7220316e224d5d69c054"
   },
@@ -13,6 +13,6 @@
   ],
   "exceptions": "see subx-factory EXCEPTIONS.md",
   "fork": "room factory.js is a fork of v1.2.10 shared-shell sign-in, with the blocked-popup preload and SubX cat home link ported in; room-specific code is kept; factory-signin.js is byte-exact from bc90c00d84c5bf20d3bfb17afb42ba809e565d9a",
-  "stampedAt": "2026-11-12T15:52:27Z",
-  "masterRef": "subx-factory PR #63 @ bc90c00d84c5bf20d3bfb17afb42ba809e565d9a (FACTORY_RELEASE.json v1.2.10)"
+  "stampedAt": "2026-11-12T18:14:52Z",
+  "masterRef": "subx-factory cursor/phone-cat-space-2026-11-12 @ d755c610b65e4c069a5609461f754151547dd6fa (FACTORY_RELEASE.json v1.2.10 pin factory.js sha256 25103bcb15e489d8e743df17248cd405e2889668d9eb15942f82036590844f94, 254994 B; room factory.js is a hand-ported fork, sha256 dfa89b50ffee1a8939439524b4826b8a3400e0dbda12f3ee3ddc662466530c32, 292040 B). Phone cat light backing (#fff/#111, --subx-cat-space 7.05rem)."
 }
