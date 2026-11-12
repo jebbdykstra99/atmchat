@@ -7674,7 +7674,9 @@
       } else {
         loadSigninModule().then(function (api) {
           return api.handleRedirectResult();
-        }).catch(function (e) { console.warn('redirect result', e); });
+        }).catch(function (e) {
+          console.warn('redirect result', e);
+        }).then(function () { markRedirectSettled(); }, function () { markRedirectSettled(); });
         fbAuth.onAuthStateChanged(function (user) {
           authStateKnown = true;
           if (user) {
