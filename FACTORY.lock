@@ -5,7 +5,7 @@
   "siteId": "atmchat",
   "files": {
     "factory.js": "21cad6888767ae236f6d146677bb5597ee0afbab74deb60e2f839eba97a3c107",
-    "factory-more.js": "cb7392cc31441dea865bf108e049d5f384ea04ae209219b6d6aa6ce80b4bb12d",
+    "factory-more.js": "253bf7ed5bba2dfaccabd704b44b5d46dc8c0d9981dd2ac4c8910353f813dabc",
     "factory-signin.js": "51ce100803d5cc7270fbfa488841cb75594b8c0bf092ee41c28460c1d4105958",
     "styles.css": "b133b279dd67fde74a3d4bd407500575b3ecda4f4a9e7220316e224d5d69c054"
   },
